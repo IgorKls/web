@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let formData = new FormData(form);
         
         alert("Идет отправка данных");
-        let response = await fetch('sendmail.php', {
+        let response = await fetch('../../sendmail.php', {
             method: 'POST',
             body: formData
         });
