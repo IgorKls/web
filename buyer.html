@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спартак-мебель</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Подключение минимизированных версий стилей:  -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- полные версии также сохраняются в папке сборки -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="menu-burger" id="chapter-toggle">
+                <span></span>
+            </div>
+
+            <ul class="header__list list header__list--left">
+                <a href="./service.html"><li class="header__list__item list__item">Сервис</li></a>
+                <a href="./buyer.html"><li class="header__list__item list__item">Покупателю</li></a>
+            </ul>
+
+            <a class="logo" href="./index.html"><img class="logo__img" src="assets/img/logo.png" alt="logotype"></a>
+            
+            <ul class="header__list list header__list--right">
+                <a href="tel:+7 (4822) 71 07 70"><li class="header__list__item list__item">+7 (4822) 71-07-70</li></a>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="flex-container">
+<div class="outgoing-list">
+    
+    <ul class="list outgoing-list__list">
+        <a class="logo" href="./index.html"><img class="logo__img" src="assets/img/logo.png" alt="logotype"></a>
+        <a href="./index.html"><li class="list__item outgoing-list__list__item">Главная</li></a>
+        <a href="./index.html#sofas"><li class="list__item outgoing-list__list__item">Диваны</li></a>
+        <a href="./index.html#armchairs"><li class="list__item outgoing-list__list__item">Кресла</li></a>
+        <a href="./index.html#beds"><li class="list__item outgoing-list__list__item">Кровати</li></a>
+        <a href="./index.html#mattresses"><li class="list__item outgoing-list__list__item">Матрасы</li></a>
+        <a href="./index.html#cabinets"><li class="list__item outgoing-list__list__item">Шкафы</li></a>
+    </ul>
+</div>
+</div>
+
+<main class="main">
+    <div class="container">
+        <p class="buyer-title">Информация покупателю:</p>
+        <div class="buyer">
+            <h2>Как оформить заказ?</h2>
+            <p>Оформление Заказа происходит в несколько шагов. Сложного ничего нет, потребуется всего лишь заполнить форму. Обращайте внимание на поля, обязательные для заполнения: эти сведения мы просим не из любопытства, они нужны для правильного оформления вашего Заказа.</p>
+            <p>Для тех, кто не любит заполнять формы и предпочитает живое человеческое общение, работает Служба заказа по телефону. Те, кому удобно, могут позвонить на номер телефона указанный в шапке сайта, кликнув на него.</p>
+            <p>Получив Заказ, наш продавец свяжется с вами по указанному телефону, чтобы все подтвердить и уточнить срок доставки. После чего к вам приедет наш курьер, который привезет Заказ и примет платеж.</p>
+            <p>При безналичной оплате (есть не во всех регионах) Заказа наш продавец выставит вам счет за выбранные товары. Нужно оплатить счет в течение трех банковских дней, после чего Заказ будет отправлен вам с курьером.</p>
+            <div class="product__description__product__order-button" id="order-button1"><p>Совершить заказ</p></div>
+        </div>
+        
+        <div class="order">
+            <form action="#" id="form" class="order__form">
+                <div class="button-close" id="order-button"></div>
+
+                <div class="order__title"><p>Оформить заказ</p></div>
+
+                <ul class="order__form__fields">
+                    <li class="order__form__fields__item fields__phone">
+                        <p>Телефон</p>
+                        <input class="fields__phone__input _req" type="text" name="tel" id="formTel">
+                    </li>
+                    <li class="order__form__fields__item fields__fio">
+                        <p>Ф.И.О.</p>
+                        <input class="fields__fio__input _req" type="text" name="name" id="formName">
+                    </li>
+                    <li class="order__form__fields__item fields__article">
+                        <p>Артикул</p>
+                        <input class="fields__article__input _req" type="text" name="article" id="formArticle">
+                    </li>
+                    <li class="order__form__fields__item fields__adress">
+                        <p>Полный адрес</p>
+                        <input class="fields__adress__input _req" type="text" name="name="adress" id="formAdress">
+                    </li>
+                    <input class="order__form__fields__submit" type="submit" id="formSubmit">
+                </ul>
+            </form>
+        </div>
+    </div>
+</main>
+    
+    <!-- Подключение минимизированных версий скриптов: -->
+    <script src="assets/js/script.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer__container">
+        <p></p>
+    </div>
+</footer>
+</html>

@@ -79,16 +79,6 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
 main {
   margin-top: 40px;
 }
@@ -493,4 +483,68 @@ main {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.buyer-title {
+  margin-top: 100px;
+  margin-bottom: 15px;
+  font-size: 34px;
+}
+
+.buyer {
+  background-color: #F6F6F6;
+  height: 60vh;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+
+.buyer p {
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.buyer p::before {
+  content: "";
+  border-left: 3px solid black;
+  margin-right: 5px;
+}
+
+.buyer p:last-child::before {
+  border: none;
+}
+
+.buyer p:last-child {
+  margin-top: 200px;
+}
+
+.service-title {
+  margin-top: 100px;
+  margin-bottom: 15px;
+  font-size: 34px;
+}
+
+.service {
+  background-color: #F6F6F6;
+  height: 60vh;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+
+.service p {
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+.service p::before {
+  content: "";
+  border-left: 3px solid black;
+  margin-right: 5px;
+}
+
+.service p:last-child::before {
+  border: none;
+}
+
+.service p:last-child {
+  margin-top: 200px;
 }

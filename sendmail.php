@@ -11,9 +11,9 @@
     $mail->IsHTML(true);
 
     //От кого письмо
-    $mail->setFrom('spartak.mebel.tver@mail.ru', 'Заказ');
+    $mail->setFrom('order@spartmebel.ru', 'Заказ');
     //Кому
-    $mail->addAddress('spartak.mebel.tver@mail.ru');
+    $mail->addAddress('order@spartmebel.ru');
     //тема
     $mail->Subject = 'Заказ с сайта';
 
@@ -38,9 +38,9 @@
 
     //Отправка
     if (!$mail->send()) {
-        $message = 'Ошибка';
-    } else {
         $message = 'Данные отправлены!';
+    } else {
+        $message = 'Ошибка';
     }
 
     $response = ['message' => $message];

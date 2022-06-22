@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спартак-мебель</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Подключение минимизированных версий стилей:  -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- полные версии также сохраняются в папке сборки -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="menu-burger" id="chapter-toggle">
+                <span></span>
+            </div>
+
+            <ul class="header__list list header__list--left">
+                <a href="./service.html"><li class="header__list__item list__item">Сервис</li></a>
+                <a href="./buyer.html"><li class="header__list__item list__item">Покупателю</li></a>
+            </ul>
+
+            <a class="logo" href="./index.html"><img class="logo__img" src="assets/img/logo.png" alt="logotype"></a>
+            
+            <ul class="header__list list header__list--right">
+                <a href="tel:+7 (4822) 71 07 70"><li class="header__list__item list__item">+7 (4822) 71-07-70</li></a>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="flex-container">
+<div class="outgoing-list">
+    
+    <ul class="list outgoing-list__list">
+        <a class="logo" href="./index.html"><img class="logo__img" src="assets/img/logo.png" alt="logotype"></a>
+        <a href="./index.html"><li class="list__item outgoing-list__list__item">Главная</li></a>
+        <a href="./index.html#sofas"><li class="list__item outgoing-list__list__item">Диваны</li></a>
+        <a href="./index.html#armchairs"><li class="list__item outgoing-list__list__item">Кресла</li></a>
+        <a href="./index.html#beds"><li class="list__item outgoing-list__list__item">Кровати</li></a>
+        <a href="./index.html#mattresses"><li class="list__item outgoing-list__list__item">Матрасы</li></a>
+        <a href="./index.html#cabinets"><li class="list__item outgoing-list__list__item">Шкафы</li></a>
+    </ul>
+</div>
+</div>
+
+<main class="main">
+    <div class="container">
+        <p class="service-title">Сервисы</p>
+        <div class="service">
+            <h2>В салонах компании представлены не только новинки рынка мебели, но и широкий выбор дополнительных услуг</h2>
+            <p>Сборка мебели (код 41). В нашей команде только опытные высокопрофессиональные сборщики.</p>
+            <p>Подъем мебели (код 42). Бережно и ловко занесем вашу мебель! При наличии лифта подъем дешевле!</p>
+            <p>Кредитование (код 43). Наши надежные банки-партнеры сделают Вам только самое выгодное предложение на приобретение мебели</p>
+            <p>Выезд дизайнера на дом (код 44). Тем, кто планирует обзавестись совершенно новой кухней в нашей компании, мы рекомендуем воспользоваться такой услугой, как вызов профессионального дизайнера на дом.</p>
+            <p>Выезд замерщика на дом (код 45). Качественный замер - первое, с чего начинается долголетие кухни. Да, именно от точности замера напрямую зависит качество дальнейшей эксплуатации гарнитура.</p>
+            <p>Расчет кухни (код 46). Узнайте ориентировочную стоимость вашей новой кухни, не выходя из дома, в один клик! Наши дизайнеры свяжутся с Вами и предложат оптимальный вариант расчета кухни.</p>
+            <p>*Чтобы заказать услугу, нажмите кнопку "заказать услугу" и введите данные, включая код услуги в форму</p>
+            
+            
+            <div class="product__description__product__order-button" id="order-button1"><p>Заказать услугу</p></div>
+        </div>
+        
+        <div class="order">
+            <form action="#" id="form" class="order__form">
+                <div class="button-close" id="order-button"></div>
+
+                <div class="order__title"><p>Оформить заказ</p></div>
+
+                <ul class="order__form__fields">
+                    <li class="order__form__fields__item fields__phone">
+                        <p>Телефон</p>
+                        <input class="fields__phone__input _req" type="text" name="tel" id="formTel">
+                    </li>
+                    <li class="order__form__fields__item fields__fio">
+                        <p>Ф.И.О.</p>
+                        <input class="fields__fio__input _req" type="text" name="name" id="formName">
+                    </li>
+                    <li class="order__form__fields__item fields__article">
+                        <p>Код услуги</p>
+                        <input class="fields__article__input _req" type="text" name="article" id="formArticle">
+                    </li>
+                    <li class="order__form__fields__item fields__adress">
+                        <p>Полный адрес</p>
+                        <input class="fields__adress__input _req" type="text" name="name="adress" id="formAdress">
+                    </li>
+                    <input class="order__form__fields__submit" type="submit" id="formSubmit">
+                </ul>
+            </form>
+        </div>
+    </div>
+</main>
+    
+    <!-- Подключение минимизированных версий скриптов: -->
+    <script src="assets/js/script.js"></script>
+    <!-- полные версии также сохраняются в папке сборки -->
+</body>
+<footer class="footer">
+    <div class="footer__container">
+        <p></p>
+    </div>
+</footer>
+</html>
